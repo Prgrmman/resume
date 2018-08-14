@@ -1,0 +1,133 @@
+% LaTeX resume using res.cls
+\documentclass[margin]{res}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font
+\setlength{\textwidth}{5.1in} % set width of text portion
+
+\begin{document}
+
+% Center the name over the entire width of resume:
+ \moveleft.5\hoffset\centerline{\large\bf Jonathan D. Terner}
+ % Draw a horizontal line the whole width of resume:
+ % address begins here
+ % Again, the address lines must be centered over entire width of resume:
+ \moveleft.5\hoffset\centerline{16 Kiersted Ave.}
+ \moveleft.5\hoffset\centerline{Kingston, NY 12401}
+ \moveleft.5\hoffset\centerline{(845) 514-7835 | jon.programming@gmail.com | github.com/Prgrmman}
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}
+
+
+\begin{resume}
+  \vspace{-8mm}
+  %%%%%%%%%%%%%%%%%% Education section
+    \section{EDUCATION}
+    {\sl SUNY Binghamton} \hfill May 2018
+   \\Watson School of Engineering, Harpur College of Arts and Sciences.
+    \\BS in Computer Science and BA in Mathematical Science.
+    % \sl will be bold italic in New Century Schoolbook (or
+    % any postscript font) and just slanted in
+    %	Computer Modern (default) font
+    \begin{itemize}
+      \item Cumulative GPA: 3.967
+    \end{itemize}
+    \vspace{-4mm}
+    {\sl Kingston High School} \hfill June 2014
+    \begin{itemize}
+      \item Valedictorian
+    \end{itemize}
+    \vspace{-3mm}
+
+    %%%%%%%%%%%%%%%%% Technical Skills section
+    \section{TECHNICAL SKILLS}
+    \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}
+    \vspace{-4mm}
+    {\sl Programming}
+    \begin{itemize}
+      \item Experience focused around object-oriented programming, but also extending to machine learning, shell scripting, functional programming and web design.
+    \end{itemize}
+    \vspace{-3mm}
+    {\sl Languages}
+    \begin{itemize}
+      \item C, C++, Python, Perl, Java, JavaScript, BASH, Haskell, x86 assembly.
+    \end{itemize}
+    \vspace{-3mm}
+    {\sl Tools and Development}
+    \begin{itemize}
+      \item Vim, Git, Emacs, GDB, Eclipse, Valgrind, HTML, CSS, \LaTeX, jQuery, SQLite.
+    \end{itemize}
+    \vspace{-3mm}
+    {\sl Operating Systems:} Linux, Windows.
+
+    %%%%%%%%%%%%%%%%%% Experience section 
+    \section{EXPERIENCE }
+    \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}
+    \vspace{-4mm}
+    {\sl IBM Spectrum Scale RAID developer} \hfill June 2018 - present
+    \vspace{-3mm}
+
+    {\sl Undergraduate Research Assistant} \hfill January-May 2018
+    \begin{itemize}
+   	  \item National Science Foundation grant recipient
+      \item Extensively modifed QEMU/KVM hypervisor to support postcopy live virtual machine migration with added fault tolerance
+      \item Advocated for clean, performance-conscious programming practices
+      \item Redesigned micro checkpointing algorithm, increasing performance by a factor of 20
+    \end{itemize}
+
+    {\sl IBM Specturm Scale Functional Verification Testing Intern} \hfill May-August 2017
+    \begin{itemize}
+      \item Developed and maintained test software for a distributed clustered file system.
+      \item Worked independently designing and implementing test plans.
+      \item Actively communicated with development and test team when designing software specifications and writing documentation. 
+      \item Administered a distributed Linux cluster.
+    \end{itemize}
+
+    \vspace{-2mm}
+    {\sl Deerfoot Lodge Staff member(Speculator, NY)} \hfill June-August 2014-2016
+    \begin{itemize}
+      \item Sous chef: Second-in-command of a commercial kitchen, jointly overseeing a crew of 8 members. Used effective teamwork and interpersonal skills. 
+    \end{itemize}
+
+
+    %%%%%%%%%%%%%%%%% Project section
+    \section{PROJECTS}
+    \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}
+    \vspace{-4mm}
+    {\sl Block-Pay}
+    \begin{itemize}
+      \item Developed group financing software using IBM blockchain technology. Responsible for front end web development and backend development in Node.js
+      \item Winning project at the IBM Bluehack hackathon.
+    \end{itemize}
+    \vspace{-4mm}
+    {\sl Cheap-game-finder}
+    \begin{itemize}
+      \item Used Haskell Cabal to implement libraries for XML and JQuery parsing and API interaction.
+    \end{itemize}
+    \vspace{-3mm}
+    {\sl Word Search Solver}
+    \begin{itemize}
+      \item Implemented full GUI written in Java that included web browser support.
+      \item Featured extensive use and modification of Swing library components.
+    \end{itemize}
+    \vspace{-3mm}
+    {\sl Binary Bomb Lab}
+    \begin{itemize}
+      \item Rendered C program with hidden functions into x86 assembly.
+      \item Used GDB to trace function calls and examine memory to deduce the purposes of the hidden functions.
+    \end{itemize}
+    \vspace{-3mm}
+
+    %%%%%%%%%%%%%%%%% Honors section
+    \section{HONORS}
+    \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}
+    \vspace{-5mm}
+    {\sl Phi Eta Sigma Honor Society.} \hfill October 2015
+
+    %%%%%%%%%%%%%%%%%  Other activities section
+    \vspace{-2mm}
+    \section{OTHER ACTIVITIES}
+    \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}
+    \vspace{-4mm}
+    Trumpet player for NAfME All Eastern Wind Ensemble. \hfill March 2013
+
+  \end{resume}
+\end{document}
